@@ -1,0 +1,20 @@
+<form (ngSubmit)="cargar(form)" #form="ngForm" >
+    ngrese id:
+    <input type="text" name="id" [(ngModel)]=id>
+<br>
+    ingrese nombre:
+    <input type="text" name="nombre" [(ngModel)]= nombre>
+    <br>
+    ingrese apellido:
+    <input type="text" name="apellido" [(ngModel)]=apellido>
+
+    <br>
+    ingrese email:
+    <input type="text" name="email" [(ngModel)]=email>
+
+    <button type="submit" >Ingresar</button>
+</form>
+
+
+<app-tabla></app-tabla>
+

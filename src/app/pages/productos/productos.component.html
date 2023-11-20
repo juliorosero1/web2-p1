@@ -1,0 +1,15 @@
+<div *ngIf="producto">
+    <h2>{{ producto.name }}</h2>
+    <p>{{ producto.description }}</p>
+</div>
+
+<h3>Editar Producto</h3>
+<form >
+    <label for="productName">Nombre del Producto:</label>
+    <input type="text" id="productName" name="productName" [(ngModel)]="producto.name" required>
+
+    <label for="productDescription">Descripción del Producto:</label>
+    <textarea id="productDescription" name="productDescription" [(ngModel)]="producto.description"></textarea>
+
+    <button type="submit">Guardar Cambios</button>
+</form>
